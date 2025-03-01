@@ -5,6 +5,7 @@
 ## Установка
 
 ```
+git clone https://github.com/UncleWeb1992/Match-Tracker.git
 npm install
 ```
 
