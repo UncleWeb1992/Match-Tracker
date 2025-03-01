@@ -1,0 +1,11 @@
+:root {
+    --bg-color: #090909;
+    --primary-color: #eb0237;
+    --secondary-color: #94142f;
+    --success-color: #43ad28;
+    --warning-color: #eb6402;
+
+    --header-height: 56px;
+
+    --body-padding: 42px;
+}

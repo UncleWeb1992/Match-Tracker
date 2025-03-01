@@ -1,0 +1,55 @@
+.item {
+    display: block;
+    margin-bottom: 12px;
+    padding: 16px;
+    background-color: #0b0e12;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.command {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.score_block {
+    text-align: center;
+
+    & .score {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24.2px;
+        margin-bottom: 4px;
+    }
+}
+
+.command_icon {
+    width: 48px;
+    height: 48px;
+}
+
+.arrow_icon {
+    width: 28px;
+    height: 28px;
+
+    cursor: pointer;
+
+    &.open {
+        transform: rotate(-180deg);
+    }
+}
+
+.match_info {
+    display: flex;
+    align-items: center;
+
+    gap: 0 20px;
+
+    margin-top: 32px;
+    padding: 12px;
+}

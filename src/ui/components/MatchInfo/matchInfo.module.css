@@ -1,0 +1,50 @@
+.list {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.item {
+    &:last-child {
+        grid-column: span 3; /* Растягиваем на всю ширину */
+    }
+}
+
+.player_icon {
+    width: 36px;
+    height: 36px;
+    margin-right: 8px;
+}
+
+.user_title {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #fafafa66;
+    margin-right: 4px;
+}
+
+.user_card {
+    padding: 8px 24px;
+}
+
+.info_card {
+    padding: 14px 24px;
+}
+
+.user_card,
+.info_card {
+    background-color: #101318;
+    justify-content: space-around;
+
+    & > div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

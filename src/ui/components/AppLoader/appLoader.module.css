@@ -1,0 +1,98 @@
+.app_loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 1;
+
+    user-select: none;
+
+    background-color: #000000;
+    z-index: 1000;
+
+    animation: fade 4s cubic-bezier(1, .18, 1, .85);
+
+    &.hide {
+        display: none;
+    }
+}
+
+.left {
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+    left: -100vw;
+    bottom: 0;
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+    background-color: darkgreen;
+
+    animation: leftOpen 4s cubic-bezier(0.6, 0, 0.4, 1);
+
+    & img {
+        width: 100px;
+
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+}
+
+.right {
+    width: 100vw;
+
+    position: absolute;
+    top: 0;
+    right: -100vw;
+    bottom: 0;
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    background-color: darkred;
+
+    animation: rightOpen 4s cubic-bezier(0.6, 0, 0.4, 1);
+
+
+    & img {
+        width: 100px;
+
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes rightOpen {
+    0% {
+        right: -100vw;
+    }
+    20% {
+        right: 0;
+    }
+    100% {
+        right: -100vw;
+    }
+}
+
+@keyframes leftOpen {
+    0% {
+        left: -100vw;
+    }
+    20% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}

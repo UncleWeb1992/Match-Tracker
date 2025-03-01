@@ -1,0 +1,29 @@
+.header {
+  height: var(--header-height);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.errorCard {
+  padding: 14px 24px;
+  background-color: #0f1318;
+  margin-right: 12px;
+}
+
+.errorIcon {
+  width: 28px;
+  height: 28px;
+  margin-right: 10px;
+}
+
+.errorText {
+  font-size: 18px;
+  font-weight: 500;
+}

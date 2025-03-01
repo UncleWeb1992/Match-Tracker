@@ -1,0 +1,21 @@
+.matchList {
+  display: block;
+  margin-top: 20px;
+  height: calc(100vh - var(--header-height) - var(--body-padding) - 25px);
+  overflow-y: auto;
+}
+
+.matchList::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--bg-color);
+}
+
+.matchList::-webkit-scrollbar-track {
+  background-color: #2a2a2a;
+  border-radius: 4px;
+}
+
+.matchList::-webkit-scrollbar-thumb {
+  background-color: var(--warning-color);
+  border-radius: 4px;
+}

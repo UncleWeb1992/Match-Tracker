@@ -1,0 +1,16 @@
+@import "./reset.css";
+@import "./var.css";
+@import "./fonts.css";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg-color);
+  padding: var(--body-padding);
+
+  font-family: "Inter 24pt", sans-serif;
+  font-size: 16px;
+  color: #fff;
+
+  overflow: hidden;
+}

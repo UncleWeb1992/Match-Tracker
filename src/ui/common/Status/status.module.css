@@ -1,0 +1,26 @@
+.status {
+  min-width: 92px;
+
+  font-size: 12px;
+  font-weight: 600;
+
+  display: inline-block;
+  text-align: center;
+
+  padding: 6px 8px;
+  border-radius: 4px;
+
+  user-select: none;
+
+  &.success {
+    background-color: var(--success-color);
+  }
+
+  &.warning {
+    background-color: var(--warning-color);
+  }
+
+  &.danger {
+    background-color: var(--primary-color);
+  }
+}
